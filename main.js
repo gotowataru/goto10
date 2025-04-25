@@ -4,7 +4,7 @@ import * as THREE from 'three';
 async function loadAmmo() {
     return new Promise((resolve, reject) => {
         const script = document.createElement('script');
-        script.src = 'https://cdn.jsdelivr.net/npm/ammo.js@0.0.10/ammo.wasm.js';
+        script.src = './libs/ammo.wasm.js';
         script.onload = () => {
             if (typeof Ammo === 'function') {
                 Ammo().then((AmmoLib) => {
